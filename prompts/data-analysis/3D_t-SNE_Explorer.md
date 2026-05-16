@@ -27,7 +27,7 @@ Visualisation Requirements: Display the dataset as an interactive 3D cube scatte
 Technology: The application should have the following properties:
 •	Use a performant and smooth 3D rendering library such as three.js or Plotly.js (3D scatter), depending on the best compatibility with Vibe.
 •	Ensure the overall experience is smooth, clean, and suitable for exploratory data analysis and presentation.
-•	Apply the "Immersive UI" design theme to the app. And set the application with a light background. 
+•	Apply an "Immersive UI" design theme to the app, and set the application with a light background. 
 •	Include a selectable toggle between dark mode and light mode, and provide an option to hide the node colour legend.
 
 ## Prompt 2
@@ -36,17 +36,17 @@ Add a hover action on all nodes that causes the display of a Tooltip type displa
 Do not change any other functionality
 
 ## Prompt 3
-Please modify the cluster legend so that if the user clicks on a cluster, only the nodes and edges in that cluster are highlighted, and all the other nodes and edges should display light grey with Transparency of 50%.
+Please modify the cluster legend so that if the user clicks on a cluster, only the nodes and edges in that cluster are highlighted, and all the other nodes and edges should display light grey with a transparency of 50%.
 Do not change any other functionality
 
 ## Prompt 4
 
-When a user clicks on a node, please highlight that node and all the related nodes for three degrees of connection, and the edges between the highlighted nodes. All the other nodes and edges should display as light grey with Transparency of 50%.  Please add an animation that pulsates the selected node to 50% bigger and back continuously, then return it to normal state when it is de-selected
+When a user clicks on a node, please highlight that node and all the related nodes for three degrees of connection, and the edges between the highlighted nodes. All the other nodes and edges should display as light grey with a transparency of 50%.  Please add an animation that pulsates the selected node to 50% bigger and back continuously, then return it to its normal state when it is deselected
 Also enabling a toggle behaviour for node selection, such that:
 •	Click a node: Highlights it and all nodes within three degrees of connection.
 •	Click the same node again: Clears the selection and returns to the default view.
 •	Click anywhere else: The onPointerMissed handler clears the selection as well if the user clicks anywhere else inside or outside the cube area.
 
 ## Prompt 5
-Please add a button that provides a CSV Download of all the details of the currently highlighted nodes and edges.
+Please add a button that provides a CSV Download of the node and edge details of the currently highlighted nodes and edges.
 
