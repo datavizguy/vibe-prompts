@@ -1,5 +1,5 @@
 ## Prompt: 3D t-SNE Explorer 
-version: v2
+version: v3
 status: experimental
 model: gemini
 
@@ -25,7 +25,7 @@ Visualisation Requirements: Display the dataset as an interactive 3D cube scatte
 •	Enable zoom in/out functionality, using the mouse scroll or pinch gesture.
 •	Include tooltips or small popups that show the id and label when hovering over each point.
 Technology: The application should have the following properties:
-•	Use a performant and smooth 3D rendering library such as three.js or Plotly.js (3D scatter), depending on the best compatibility with Vibe.
+•	Use a performant and smooth 3D rendering library such as three.js (3D scatter).
 •	Ensure the overall experience is smooth, clean, and suitable for exploratory data analysis and presentation.
 •	Apply an "Immersive UI" design theme to the app, and set the application with a light background. 
 •	Include a selectable toggle between dark mode and light mode, and provide an option to hide the node colour legend.
@@ -36,12 +36,12 @@ Add a hover action on all nodes that causes the display of a Tooltip type displa
 Do not change any other functionality
 
 ## Prompt 3
-Please modify the cluster legend so that if the user clicks on a cluster, only the nodes and edges in that cluster are highlighted, and all other nodes and edges are displayed as bright grey (#E8E9E8) with a transparency of 50%.
+Please modify the cluster legend so that if the user clicks on a cluster, only the nodes and edges in that cluster are highlighted, and all other nodes and edges are displayed as bright grey (#E8E9E8) with a transparency of 50%. When a node or cluster is selected, make all the activated edges thicker so that they are easy to see while exploring the visual. 
 Do not change any other functionality
 
 ## Prompt 4
 
-When a user clicks on a node, please highlight that node and all the related nodes for three degrees of connection, and the edges between the highlighted nodes. All other nodes and edges should display as bright grey (#E8E9E8) with a transparency of 50%.  Please add an animation that pulsates the selected node to 50% bigger and back continuously, then return it to its normal state when it is deselected
+When a user clicks on a node, please highlight that node and all the related nodes for three degrees of connection, and the edges between the highlighted nodes. All other nodes and edges should display as bright grey (#E8E9E8) with a transparency of 50%. When a node or cluster is selected, make all the activated edges thicker so that they are easy to see while exploring the visual.  Please add an animation that pulsates the selected node to 50% bigger and back continuously, then return it to its normal state when it is deselected.
 Also enabling a toggle behaviour for node selection, such that:
 •	Click a node: Highlights it and all nodes within three degrees of connection.
 •	Click the same node again: Clears the selection and returns to the default view.
