@@ -1,5 +1,5 @@
 ## Prompt: 3D t-SNE Explorer 
-version: v1
+version: v2
 status: experimental
 model: gemini
 
@@ -36,12 +36,12 @@ Add a hover action on all nodes that causes the display of a Tooltip type displa
 Do not change any other functionality
 
 ## Prompt 3
-Please modify the cluster legend so that if the user clicks on a cluster, only the nodes and edges in that cluster are highlighted, and all the other nodes and edges should display light grey with a transparency of 50%.
+Please modify the cluster legend so that if the user clicks on a cluster, only the nodes and edges in that cluster are highlighted, and all other nodes and edges are displayed as bright grey (#E8E9E8) with a transparency of 50%.
 Do not change any other functionality
 
 ## Prompt 4
 
-When a user clicks on a node, please highlight that node and all the related nodes for three degrees of connection, and the edges between the highlighted nodes. All the other nodes and edges should display as light grey with a transparency of 50%.  Please add an animation that pulsates the selected node to 50% bigger and back continuously, then return it to its normal state when it is deselected
+When a user clicks on a node, please highlight that node and all the related nodes for three degrees of connection, and the edges between the highlighted nodes. All other nodes and edges should display as bright grey (#E8E9E8) with a transparency of 50%.  Please add an animation that pulsates the selected node to 50% bigger and back continuously, then return it to its normal state when it is deselected
 Also enabling a toggle behaviour for node selection, such that:
 •	Click a node: Highlights it and all nodes within three degrees of connection.
 •	Click the same node again: Clears the selection and returns to the default view.
