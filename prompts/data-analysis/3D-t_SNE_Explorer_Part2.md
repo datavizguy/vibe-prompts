@@ -12,3 +12,5 @@ Please re-label all the notes and clusters (including the legend) to align with 
 ## Prompt 2
 Centrality Measures: Quantify the importance or influence of each node within the network (e.g., degree centrality, betweenness centrality), and add the top 4 scoring nodes to a separate section of the Legend and make those items on the legend selectable, like the clusters and nodes.
 
+## Prompt 3
+Include the Centrality Measures in both the Popup Tooltip and the CSV download. Do not change any other functionality.
