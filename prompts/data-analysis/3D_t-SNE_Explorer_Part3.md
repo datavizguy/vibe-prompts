@@ -22,4 +22,8 @@ Ok, now I would like to add an additional Layout mode choice called “Flat”. 
 Do not change the current dataset and do not change any other functionality. 
 
 ## Prompt 4
-With the addition of the display modes the application and overall browser interactions have become very sluggish. Please review all the code and identify options to improve performance and responsiveness
+Ok, now I would like to add an additional Layout mode choice called “Sphere”. In sphere mode move all the nodes of each cluster should move to be projected onto a 3D sphere, keep the connections between the nodes and maintain the Force-Directed Graph Layout as a cluster (not a uniform layout).
+Do not change the current dataset and do not change any other functionality.
+
+## Prompt 5 (Performance)
+With the addition of the display modes, the application and overall browser interactions have become very sluggish. Please review all the code and identify options to improve performance and responsiveness
