@@ -7,8 +7,9 @@ model: gemini
 Create an experimental Interactive Data  Visualisation 3D t-SNE Explorer
 
 ## Prompt 1
-Task: I would like to create a simple interactive 3D data visualisation inspired by a t-SNE projection, where the x, y, z coordinates of each node in the visual are generated as part of a sample dataset as specified below.
-Dataset Requirements:  Please generate a sample dataset with 500 data points, each with the following properties:  
+Task: I would like to create a simple interactive 3D data visualisation inspired by a t-SNE projection, where the x, y, z coordinates of each node in the visual are generated as part of a sample dataset as specified below.  
+Dataset Requirements:  
+Please generate a sample dataset with 500 data points, each with the following properties:  
 •	x: Number representing the first t-SNE dimension (range approximately -50 to +50).  
 •	y: Number representing the second t-SNE dimension (range approximately -50 to +50).  
 •	z: Number representing the third t-SNE dimension (range approximately -50 to +50).  
